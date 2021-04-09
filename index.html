@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DragDrop</title>
+        <meta name="description" content="Practice of Drag and Drop">
+        <link rel="stylesheet" href="styles.css">
+        <!-- <link rel="icon" href="images\logo.png" type="image/png" sizes="16x16"> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <main>
+        <h1 class="title">Planner</h1>
+
+        <section class="list__container" id="list__container">
+            <div class="listbox">
+                <div class="list__name">
+                    <p id="listname" onkeyup="edit()">List 1</p>
+                </div>                
+                <ul class="list" id="list1">
+                    <li class="list__element">Element 1</li>
+                    <li class="list__element">Element 2</li>
+                </ul>
+                <div class="element__add">
+                    <input id="input" class="list__add" type="text" placeholder="Add" contenteditable="true">
+                    <button id="enter" class="add__button">+</button>
+                </div>
+            </div>
+
+            <div class="listbox">
+                <div class="list__name">
+                    <p>List 2</p>
+                </div>                
+                <ul class="list" id="list2">
+                    <li class="list__element">Element 1</li>
+                    <li class="list__element">Element 2</li>
+                </ul> 
+                <div class="element__add">
+                    <input class="list__add" type="text" placeholder="Add" contenteditable="true">
+                    <button id="enter" class="add__button">+</button>
+                </div>
+            </div>
+
+            <div class="listbox">
+                <div class="list__name">
+                    <p>List 3</p>
+                </div>                
+                <ul class="list" id="list3">
+                    <li class="list__element">Element 1</li>
+                    <li class="list__element">Element 2</li>
+                </ul>
+                <div class="element__add">
+                    <input class="list__add" type="text" placeholder="Add" contenteditable="true">
+                    <button class="add__button">+</button>
+                </div>   
+            </div>
+
+            <div class="listbox">
+                <div class="list__name" contenteditable="true">
+                    <p>List 4</p>
+                </div>                
+                <ul class="list" id="list4">
+                    <li class="list__element">Element 1</li>
+                    <li class="list__element">Element 2</li>
+                </ul>
+                <div class="element__add">
+                    <input class="list__add" type="text" placeholder="Add" contenteditable="true">
+                    <button class="add__button">+</button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </main>
+        
+    <footer class="footer">
+
+    </footer>
+    <!-- jsDelivr :: Sortable :: Latest (https://www.jsdelivr.com/package/npm/sortablejs) -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
